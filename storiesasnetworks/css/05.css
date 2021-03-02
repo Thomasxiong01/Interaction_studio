@@ -1,0 +1,88 @@
+body {
+  background: rgb(236,204,244);
+background: radial-gradient(circle, rgba(236,204,244,1) 0%, rgba(242,216,250,1) 39%, rgba(123,245,255,1) 100%);
+}
+
+.green {
+  cursor: pointer;
+  color: rgb(31, 234, 80);
+}
+
+.fs-200::after {
+  display: none;
+}
+.fs-200:hover {
+  font-size: 200px;
+}
+@media screen and (max-width: 375px) {
+
+
+	body{
+		background: rgb(224,135,255);
+background: radial-gradient(circle, rgba(224,135,255,1) 0%, rgba(154,194,255,1) 52%, rgba(118,114,244,1) 100%);
+	}
+
+	.box1{
+		font-size: 8px;
+		text-align: justify;
+		width: 150px;
+		margin-top: 40px;
+		line-height: 10px
+	}
+
+	.box2{
+		margin-top: 0px;
+	}
+	.box2 a{
+		font-size: 5px;
+	}
+
+	.txt-center{
+  margin-top: -180px;
+}
+
+.fs-200::after{
+  font-size: 6px
+}
+h1{
+  display: block;
+  
+  padding-top: 15px
+}
+.fs-200{
+  font-size: 100px
+}
+
+
+.green{
+	cursor: url('./emoji/cursor1.png');
+	color: grey;
+}
+
+a{
+	cursor: url('./emoji/cursor1.png');
+}
+.fs-200 {
+  position: relative;
+  font-size: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 40px
+
+}
+
+.fs-200:hover {
+  font-size: 100px;
+  transform:none;
+}
+.fs-200::after {
+  content: "click me";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 6px;
+}
+
+}

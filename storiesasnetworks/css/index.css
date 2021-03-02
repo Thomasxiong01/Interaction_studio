@@ -1,0 +1,151 @@
+@font-face {
+  src: url("fonts/BlackOpsOne-Regular.ttf");
+  font-family: blackops;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: blackops;
+ /* overflow: hidden;*/
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 70px 70px;
+  grid-template-areas: 
+  'a b c'
+  'd e f'
+  'g h i';
+
+}
+
+.hv {
+  transition: all 0.4s;
+  height: 20px;
+}
+
+.hv:hover {
+  transform: scale(1.2);
+}
+
+h1.customFont {
+  font-size: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #6dbe44;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 200px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.main {
+  padding: 20px;
+}
+
+@media screen and (max-width: 375px) {
+
+body{
+background: rgb(241,232,113);
+background: radial-gradient(circle, rgba(241,232,113,1) 0%, rgba(204,245,173,1) 51%, rgba(119,200,233,1) 100%);}
+
+
+  .main {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 50px 50px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i";
+  }
+  .main{
+    padding: 0;
+  }
+  .main{
+    margin: 0
+  }
+  body {
+    margin: 0px;
+    padding: 0;
+    font-family: blackops;
+    
+  }
+
+h1 {
+  font-size: 50px;
+}
+h1.customFont {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.box5{
+  grid-area: 1;
+}
+
+a{cursor: url('cursor.png'),auto;}
+
+a {
+  text-decoration: none;
+  color: #5571B7;
+  text-decoration: none;
+}
+.box5 a{
+  color: #2FD61D
+}
+.box1 a {
+  color: #AEAFAE
+}
+
+.box3 a{
+  color: orange;
+}
+.box2 a{
+  color: #5464FB;
+}
+.box4 a{
+  color: #BB6CF2;
+
+}
+
+.box6 a{
+  color: #9F803D
+
+}
+
+.box8 a{
+  color: #EA95EC
+}
+
+.box9 a{
+  color: #5EA940
+}
+ 
+}
+
+
