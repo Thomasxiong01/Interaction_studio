@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rzd1vgi.css">
+</head>
+
+<body>
+    <div id="index">
+        <h1>MOOD<br>INDEX</h1>
+        <div class="contentbox">
+            <a href="javascript:;" onclick="page2('purple',1)" class="ball box g1">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s1.png" alt="">/ANGRY</p>
+                    <p>COLOR TEMPERATURE：1100K<img class='mobilepng' src='./images/b1.png'></p>
+                    <p>#e33c97</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('red',2)" class="ball box g2">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s2.png" alt="">/ANNOYED</p>
+                    <p>COLOR TEMPERATURE：1500K<img class='mobilepng' src='./images/b2.png'></p>
+                    <p>#f47a7d</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('blue',3)" class="ball box g3">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s3.png" alt="">/AWFUL</p>
+                    <p>COLOR TEMPERATURE：8000K<img class='mobilepng' src='./images/b3.png'></p>
+                    <p>#7e9dcd</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('cyan',4)" class="ball box g4">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s4.png" alt="">/DEPRESSED</p>
+                    <p>COLOR TEMPERATURE：7000K<img class='mobilepng' src='./images/b4.png'></p>
+                    <p>#83d5e6</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('green',5)" class="ball box g5">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s5.png" alt="">/BORED</p>
+                    <p>COLOR TEMPERATURE：——<img class='mobilepng' src='./images/b4.png'></p>
+                    <p>#98cd5e</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('yellow',6)" class="ball box g6">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s6.png" alt="">/ENERGETIC</p>
+                    <p>COLOR TEMPERATURE：3000K<img class='mobilepng' src='./images/b5.png'></p>
+                    <p>#f3ec21</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('orange',7)" class="ball box g7">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s7.png" alt="">/HYPER</p>
+                    <p>COLOR TEMPERATURE：2000K<img class='mobilepng' src='./images/b6.png'></p>
+                    <p>#ff9642</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('white',8)" class="ball box g8">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s8.png" alt="">/CHILLED</p>
+                    <p>COLOR TEMPERATURE：5500K<img class='mobilepng' src='./images/b8.png'></p>
+                    <p>#ffffff</p>
+                </div>
+            </a>
+            <a href="javascript:;" onclick="page2('black',9)" class="ball box g9">
+                <div class="contxt">
+                    <p>MOOD INDEX: <img class="hpng" src="./images/s9.png" alt="">/LOVING</p>
+                    <p>COLOR TEMPERATURE：——
+                    <p>#000000</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="page2" style="display: none;">
+        <a href="javascript:;" class="btnleft">
+            <!-- <img class="png" src="./images/b1.png" alt=""> -->
+        </a>
+        <div class="contentbox" id="color-detail">
+
+        </div>
+    </div>
+    <div id="page3" style="display: none;">
+        <a href="javascript:;" class="btnleft">
+            <!-- <img class="png" src="./images/b1.png" alt=""> -->
+        </a>
+        <div class="centerball">
+            <p>NAME: <span class="name">231321</span></p>
+            <div class="ballbox">
+                <!-- <div class="mainbox">
+                    <div class="tag"><img src="./images/111.png" alt=""></div>
+                </div> -->
+                <img src="" alt="">
+            </div>
+            <p>COMPANY: <span class="company"></span></p>
+            <P>RGB <span class="colors"></span></P>
+            <P>hex <span class="hex"></span></P>
+            <a href="./index.html" class="btnball"></a>
+        </div>
+    </div>
+    <script src="lib/airtable.browser.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
