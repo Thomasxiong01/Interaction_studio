@@ -22,7 +22,7 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 .scope{
 	margin-top: 30px;
@@ -38,6 +38,7 @@ html, body {
   /* -webkit-animation:rotate 15s infinite; */
   /* -o-animation:rotate 15s infinite; */
   /* animation:rotate 15s infinite; */
+  cursor: pointer;
 }
 .rotateWrapper{
 	-webkit-animation:rotate 1s linear infinite;

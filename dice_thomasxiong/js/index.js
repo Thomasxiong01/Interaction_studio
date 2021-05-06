@@ -33,7 +33,7 @@ let boxs3 = wrapper3.children;
 let boxs4 = wrapper4.children;
 let boxs5 = wrapper5.children;
 let boxs6 = wrapper6.children;
-let isDicing1 = false,isDicing2=false,dices=0;
+let isDicing1 = false,isDicing2=false,dices1=0,dices2=0;;
 let scope1 = 0,scope2=0;
 let scopeText={
 	3:{
@@ -69,22 +69,22 @@ let scopeText={
 	9:{
 		title:"BAD LUCK",
 		desc:"Oops! Throw away all the garbage in the room.",
-		color:"#FF0000"
+		color:"#4FA5F8"
 	},
 	10:{
 		title:"BAD LUCK",
 		desc:"Oops! Go clean the floor with no dust, thanks!!!",
-		color:"#FF0000"
+		color:"#4FA5F8"
 	},
 	11:{
 		title:"BAD LUCK",
 		desc:"Sorry! You gotta wash all the bowls and dishes.",
-		color:"#FF0000"
+		color:"#4FA5F8"
 	},
 	12:{
 		title:"BAD LUCK",
 		desc:"Sorry! You gotta wash off all clothes and dry all of them.",
-		color:"#FF0000"
+		color:"#4FA5F8"
 	},
 	13:{
 		title:"TOUGH LUCK",
@@ -127,13 +127,16 @@ let scopeDesc2 = document.querySelector(".tab-paly2 .scope-desc");
 
 let start1=1,start2=2,start3=3,start4=3,start5=4,start6=5;
 setTimeout(()=>{
-	render();
 	if(isPC){
+		render();
 		$(".tab-box").animate({marginLeft:'-'+W+'px'})
 	}else{
-		$(".tab-box").animate({marginTop:'-'+H+'px'})
+		// $(".tab-box").animate({marginTop:'-'+H+'px'})
 	}
 },3000)
+if(!isPC){
+	render();
+}
 goHome.onclick=()=>{
 	scopeS1.innerHTML=scope1;
 	scopeTitle1.innerHTML=scopeText[scope1].title;
@@ -146,19 +149,34 @@ goHome.onclick=()=>{
 	if(isPC){
 		$(".tab-box").animate({marginLeft:'-'+2*W+'px'})
 	}else{
-		$(".tab-box").animate({marginTop:'-'+2*H+'px'})
+		$(".tab-box").animate({marginTop:'-'+1*H+'px'})
 	}
 }
 goStart.onclick=()=>{
-	dices=0;
+	dices1=0;
+	dices2=0;
 	goHome.style.display="none";
 	if(isPC){
 		$(".tab-box").animate({marginLeft:'-'+W+'px'})
 	}else{
-		$(".tab-box").animate({marginTop:'-'+H+'px'})
+		$(".tab-box").animate({marginTop:'0px'})
 	}
 }
+// let wrapperBox1 = document.querySelector(".tab-paly1 .wrapperBox")
+// let wrapperBox2 = document.querySelector(".tab-paly2 .wrapperBox")
+wrapper1.onclick=()=>{
+	boxDicing1()
+}
+wrapper2.onclick=()=>{
+	boxDicing1()
+}
+wrapper3.onclick=()=>{
+	boxDicing1()
+}
 tabDot1.onclick=()=>{
+	boxDicing1();
+}
+function boxDicing1(){
 	if(isDicing1){
 		return;
 	}
@@ -167,16 +185,25 @@ tabDot1.onclick=()=>{
 	scope1+=dicing(wrapper2,boxs2,isDicing1);
 	scope1+=dicing(wrapper3,boxs3,isDicing1);
 	setTimeout(()=>{
-		dices+=1;
-		if(dices && dices%2==0 && !isDicing1 && !isDicing2){
+		dices1+=1;
+		if(dices1>0 && dices2>0&& !isDicing1 && !isDicing2){
 			goHome.style.display="flex";
 		}
 	},2200)
-	// setTimeout(()=>{
-	// 	document.querySelector('.scope').innerHTML='Score：'+scope1
-	// },2000)
+}
+wrapper4.onclick=()=>{
+	boxDicing2()
+}
+wrapper5.onclick=()=>{
+	boxDicing2()
+}
+wrapper6.onclick=()=>{
+	boxDicing2()
 }
 tabDot2.onclick=()=>{
+	boxDicing2();
+}
+function boxDicing2(){
 	if(isDicing2){
 		return;
 	}
@@ -185,8 +212,8 @@ tabDot2.onclick=()=>{
 	scope2+=dicing(wrapper5,boxs5,isDicing2);
 	scope2+=dicing(wrapper6,boxs6,isDicing2);
 	setTimeout(()=>{
-		dices+=1;
-		if(dices && dices%2==0 && !isDicing1 && !isDicing2){
+		dices2+=1;
+		if(dices1>0 && dices2>0&& !isDicing1 && !isDicing2){
 			goHome.style.display="flex";
 		}
 	},2200)
@@ -205,6 +232,7 @@ function render(){
 		if(i != start1-1){
 			boxs1[i].style.visibility="hidden";
 		}else{
+			boxs1[i].style.visibility="visible";
 			boxs1[i].classList.remove('boxT'+start1)
 		}
 	}
@@ -212,6 +240,7 @@ function render(){
 		if(i != start2-1){
 			boxs2[i].style.visibility="hidden";
 		}else{
+			boxs2[i].style.visibility="visible";
 			boxs2[i].classList.remove('boxT'+start2)
 		}
 	}
@@ -219,6 +248,7 @@ function render(){
 		if(i != start3-1){
 			boxs3[i].style.visibility="hidden";
 		}else{
+			boxs3[i].style.visibility="visible";
 			boxs3[i].classList.remove('boxT'+start3)
 		}
 	}
@@ -226,6 +256,7 @@ function render(){
 		if(i != start4-1){
 			boxs4[i].style.visibility="hidden";
 		}else{
+			boxs4[i].style.visibility="visible";
 			boxs4[i].classList.remove('boxT'+start4)
 		}
 	}
@@ -233,6 +264,7 @@ function render(){
 		if(i != start5-1){
 			boxs5[i].style.visibility="hidden";
 		}else{
+			boxs5[i].style.visibility="visible";
 			boxs5[i].classList.remove('boxT'+start5)
 		}
 	}
@@ -240,11 +272,11 @@ function render(){
 		if(i != start6-1){
 			boxs6[i].style.visibility="hidden";
 		}else{
+			boxs6[i].style.visibility="visible";
 			boxs6[i].classList.remove('boxT'+start6)
 		}
 	}
 }
-
 function startRender(type){
 	if(type == 1){
 		scope1=0;
@@ -287,6 +319,7 @@ function dicing(wrapper,boxs,isDicing){
 			if(i != diceDot-1){
 				boxs[i].style.visibility="hidden";
 			}else{
+				boxs[i].style.visibility="visible";
 				boxs[i].classList.remove('boxT'+diceDot)
 			}
 		}

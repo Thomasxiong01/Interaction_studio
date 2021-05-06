@@ -9,17 +9,17 @@ window.onload = function () {
       if (Array.from(cl).indexOf('box1') !== -1) {
         color = '#DADADA';
       } else if (Array.from(cl).indexOf('box2') !== -1) {
-        color = '#0054F5';
+        color = '#C8C9C8';
       } else if (Array.from(cl).indexOf('box3') !== -1) {
-        color = '#FFA030';
+        color = '#FF8300';
       } else if (Array.from(cl).indexOf('box4') !== -1) {
-        color = '#CB00FF';
+        color = '#66A8F7';
       }else if (Array.from(cl).indexOf('box6') !== -1) {
-        color = '#1018FF';
+        color = '#9FE1FC';
       } else if (Array.from(cl).indexOf('box7') !== -1) {
-        color = '#FF9900';
+        color = '#8DCB8A';
       } else if (Array.from(cl).indexOf('box8') !== -1) {
-        color = '#51D1FE';
+        color = '#50C338';
       } else if (Array.from(cl).indexOf('box9') !== -1) {
         color = '#388B55';
       }

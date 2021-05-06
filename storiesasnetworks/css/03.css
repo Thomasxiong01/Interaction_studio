@@ -1,6 +1,5 @@
 body {
-  background-color: background: rgb(227,236,114);
-background: radial-gradient(circle, rgba(227,236,114,1) 0%, rgba(170,218,247,1) 100%);;
+  background-color: orange;
 }
 
 @keyframes myfirst {

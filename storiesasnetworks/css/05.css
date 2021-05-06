@@ -1,6 +1,5 @@
 body {
-  background: rgb(236,204,244);
-background: radial-gradient(circle, rgba(236,204,244,1) 0%, rgba(242,216,250,1) 39%, rgba(123,245,255,1) 100%);
+background-color: #66A8F7
 }
 
 .green {
