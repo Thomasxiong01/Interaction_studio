@@ -1,0 +1,108 @@
+body {
+background-color: #66A8F7
+}
+
+.green {
+  cursor: pointer;
+  color: rgb(31, 234, 80);
+}
+.txt-center{
+	animation: heart 1.3s ease-in-out .5s infinite alternate;
+}
+.fs-200{
+	color: #000000;
+	font-size: 150px;
+}
+.fs-200::after {
+  display: none;
+}
+.fs-200:hover {
+  font-size: 200px;
+}
+.box1{
+		margin: 0 auto;
+	}
+	.box2 .txt-center{
+		text-align: left;
+		margin-left: 10%;
+	}
+.box2 h1{
+	position: relative;
+	margin-left: 120px;
+}
+.qipao-left {
+	top: 50px;
+}
+.qipao-left span{
+	color: #66A8F7;
+}
+@media screen and (max-width: 375px) {
+
+
+	body{
+		background-color: #609EE8
+	}
+
+	.box1{
+		font-size: 8px;
+		text-align: justify;
+		width: 150px;
+		margin-top: 40px;
+		line-height: 10px
+	}
+
+	.box2{
+		margin-top: 0px;
+	}
+	.box2 a{
+		font-size: 5px;
+	}
+	.txt-center{
+  margin-top: -180px;
+}
+
+.fs-200::after{
+  font-size: 6px
+}
+h1{
+  display: block;
+  
+  padding-top: 15px
+}
+.fs-200{
+  font-size: 100px
+}
+
+
+.green{
+	cursor: url('./emoji/cursor1.png');
+	color: grey;
+}
+
+a{
+	cursor: url('./emoji/cursor1.png');
+}
+.fs-200 {
+  position: relative;
+  font-size: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 40px
+
+}
+
+.fs-200:hover {
+  font-size: 100px;
+  transform:none;
+}
+.fs-200::after {
+  content: "click me";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 6px;
+}
+
+}

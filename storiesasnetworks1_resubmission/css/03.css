@@ -1,0 +1,128 @@
+body {
+  background-color: orange;
+}
+
+@keyframes myfirst {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 1000px);
+  }
+}
+.animate {
+  position: fixed;
+  top: -200px;
+  animation: myfirst 5s linear;
+  -moz-animation: myfirst 5s; /* Firefox */
+  -webkit-animation: myfirst 5s; /* Safari 和 Chrome */
+  -o-animation: myfirst 5s; /* Opera */
+}
+
+/* .fs-200::after {
+  content: "click me";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+} */
+
+.txt-center{
+	animation: heart 1.3s ease-in-out .5s infinite alternate;
+}
+.fs-200 {
+  position: relative;
+  font-size: 200px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  top: 35%;
+  color: #000000;
+  /* line-height: .5; */
+  line-height: 1.4;
+}
+
+.fs-200:hover {
+  font-size: 250px;
+  
+}
+.fs-200::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: none;
+  /* color:#BCDFCF; */
+  /* font-size: 12px; */
+}
+.box1{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.box2 .txt-center{
+	text-align: left;
+	margin-left: 10%;
+}
+.box2 h1{
+	position: relative;
+}
+.qipao-left{
+	margin-top: 30px;
+}
+@media screen and (max-width: 375px) {
+
+.box1{
+  font-size: 8px;
+  text-align: justify;
+  width: 150px;
+  line-height: 10px;
+  margin-top: 40px;
+}
+
+body{
+  background: orange;
+}
+
+h1{
+  padding-top: 10px
+}
+.apostrophe{
+  color: orange;
+  font-style: oblique;
+}
+
+.box2{
+  margin-top: 0px;
+}
+.box2 a{
+  font-size: 5px;
+
+}
+.txt-center{
+  margin-top: -180px;
+}
+.fs-200 {
+  position: relative;
+  font-size: 150px;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 40px;
+  top: 170px
+
+}
+
+.fs-200:hover {
+  font-size: 100px;
+  transform:none;
+}
+/* .fs-200::after {
+  content: "click me";
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 6px;
+} */
+
+
+}

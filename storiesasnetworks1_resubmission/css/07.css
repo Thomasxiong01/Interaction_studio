@@ -1,0 +1,145 @@
+body {
+  background-color: pink;
+}
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circle {
+	position: absolute;
+	transition: ease-in-out 0.2s;
+  /* display: none; */
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  margin-top: 140px;
+  border-radius: 100%;
+  background: rgb(255,162,0);
+background: radial-gradient(circle, rgba(255,162,0,1) 0%, rgba(253,152,255,1) 53%, rgba(0,181,255,1) 100%);;
+}
+.txt-center{
+	animation: heart 1.3s ease-in-out .5s infinite alternate;
+}
+.fs-200 {
+  color: #000;
+  transition: ease-in-out 0.2s;
+  line-height: .5;
+}
+
+.fs-200:hover {
+  font-size: 240px;
+  
+}
+.fs-200::after {
+  transform: translate(-50%, 60%);}
+
+.fs-200::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 68%;
+  transform: translate(-50%, -50%);
+  color: #FEC0CA;
+  font-size: 12px;
+}
+.box1{
+		margin: 0 auto;
+	}
+	.box2 .txt-center{
+		text-align: right;
+		margin-right: 10%;
+	}
+.box2 h1{
+	position: relative;
+	/* margin-left: 120px; */
+}
+.qipao-right {
+	top: 40px;
+	right: 10%;
+	margin-right: 80px;
+}
+.qipao-right span{
+	color: pink;
+}
+
+
+
+
+
+
+@media screen and (max-width:375px){
+
+body{
+	background-color: #F1B6BF}
+.box1 {
+  
+  width: 150px;
+  font-family: wave;
+  margin-top: 40px;
+  
+  line-height: 10px;
+  text-align: justify;
+  font-size: 8px;
+
+}
+.box2{
+  margin-top: 0px;
+}
+.box2 a{
+  font-size: 5px;
+
+}
+
+.txt-center{
+  margin-top: -180px;
+}
+
+.fs-200::after{
+  font-size: 6px
+}
+
+h1{
+  display: block;
+  
+  padding-top: 15px
+}
+.fs-200{
+  font-size: 100px
+}
+
+
+.fs-200 {
+  position: relative;
+  font-size: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 40px
+
+}
+
+.fs-200:hover {
+  font-size: 100px;
+  transform:none;
+}
+.fs-200::after {
+  content: "click me";
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 6px;
+}
+.circle {
+  display: none;
+  width: 100px;
+  height: 100px;
+  margin-top: 140px;
+  border-radius: 100%;
+  background: rgb(255,162,0);
+background: radial-gradient(circle, rgba(255,162,0,1) 0%, rgba(253,152,255,1) 53%, rgba(0,181,255,1) 100%); ;
+}
+}
